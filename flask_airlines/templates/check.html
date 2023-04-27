@@ -1,0 +1,23 @@
+<html>
+<body>
+<table border = 1>
+<thead>
+<td>Card Number</td>
+<td>Email</td>
+<td>Expiry Date</td>
+<td>CVV</td>
+<td>Name on Card</td>
+</thead>
+{% for row in rows %}
+<tr>
+<td>{{row["cardNumber"]}}</td>
+<td>{{row["mail"]}}</td>
+<td> {{ row["expiryDate"]}}</td>
+<td> {{ row["cvv"]}}</td>
+<td>{{row['nameOnCard']}}</td>
+</tr>
+{% endfor %}
+</table>
+<a href = "/index">Go back to home page</a>
+</body>
+</html>

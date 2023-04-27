@@ -1,0 +1,25 @@
+<html>
+<body>
+<table border = 1>
+<thead>
+<td>First name</td>
+<td>Last name</td>
+<td>DOB</td>
+<td>Gender</td>
+<td>Contact</td>
+<td>Password</td>
+</thead>
+{% for row in rows %}
+<tr>
+<td>{{row["firstname"]}}</td>
+<td>{{row["lastname"]}}</td>
+<td> {{ row["dob"]}}</td>
+<td> {{ row["gender"]}}</td>
+<td>{{row['contactNumber']}}</td>
+<td>{{row['password']}}</td>
+</tr>
+{% endfor %}
+</table>
+<a href = "/signup">Go back to home page</a>
+</body>
+</html>
